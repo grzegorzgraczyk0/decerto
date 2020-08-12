@@ -1,0 +1,7 @@
+<ul class="d-flex flex-wrap justify-content-center mx-0 px-0">
+    <li class="p-2" *ngFor="let product of products">
+        <div class="products d-flex justify-content-center rounded" [ngClass]="{'checked': product.checked}" (click)="product.checked = !product.checked">
+            <span class="align-self-center">{{product.name}}</span>
+        </div>
+    </li>
+</ul>
